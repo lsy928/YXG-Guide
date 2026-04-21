@@ -27,8 +27,8 @@ export default function Library() {
     {
       id: 9,
       title: '科力普',
-      fileTitle: '科力普2025Q3-公司介绍9.18.pptx',
-      file: '/files/library/partners&suppliers/科力普2025Q3-公司介绍9.18.pptx',
+      fileTitle: '科力普2025Q3-公司介绍9.18.pdf',
+      file: '/files/library/partners&suppliers/科力普2025Q3-公司介绍9.18.pdf',
     },
     {
       id: 10,
