@@ -7,7 +7,7 @@ export default function Home() {
   const paymentInfo = [
     { label: '公司银行账号', value: '浙江柚香谷控股股份有限公司' },
     { label: '开户行', value: '招行外滩支行' },
-    { label: '账号', value: '121913573610401' }
+    { label: '账号', value: '联系内部人员获取', isMasked: true }
   ];
 
   const paymentText = paymentInfo
@@ -47,7 +47,7 @@ export default function Home() {
             {paymentInfo.map((item, idx) => (
               <div key={idx} className="flex justify-between">
                 <span className="text-gray-500">{item.label}</span>
-                <span className="font-medium">{item.value}</span>
+                <span className={`font-medium ${item.isMasked ? 'text-gray-400' : ''}`}>{item.value}</span>
               </div>
             ))}
           </div>
@@ -84,10 +84,10 @@ export default function Home() {
             </div>
             <div className="flex justify-between">
               <span className="text-gray-500">密码</span>
-              <span className="font-medium">HST123456</span>
+              <span className="font-medium text-gray-400">联系内部人员获取</span>
             </div>
             <button
-              onClick={() => navigator.clipboard.writeText('SSID: YXG\n密码: HST123456')}
+              onClick={() => navigator.clipboard.writeText('SSID: YXG\n密码: 联系内部人员获取')}
               className="btn btn-primary mt-3"
             >
               <ClipboardCopy className="w-4 h-4" />
